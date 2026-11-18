@@ -76,8 +76,22 @@ def trainable_fraction(trainable_count, total_count):
     # TODO: return the fraction of parameters that are trainable.
     return float(trainable_count/total_count)
 
-# Step 9 - build_instruction_examples (not yet solved)
-# TODO: implement
+# Step 9 - build_instruction_examples
+def build_instruction_examples():
+    """Return a small list of {'instruction', 'response'} dicts for SFT."""
+    # TODO: return a tiny hand-written list of instruction/response example dicts.
+    return [
+        {"instruction": "What is the capital of France?",
+         "response": "The capital of France is Paris."},
+        {"instruction": "Translate 'good morning' into Spanish.",
+         "response": "Buenos días."},
+        {"instruction": "Give one synonym for 'happy'.",
+         "response": "Joyful."},
+        {"instruction": "What is 7 times 8?",
+         "response": "7 times 8 is 56."},
+        {"instruction": "Write a Python expression that reverses the string s.",
+         "response": "s[::-1]"},
+    ]
 
 # Step 10 - format_instruction_example (not yet solved)
 # TODO: implement
